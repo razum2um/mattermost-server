@@ -446,6 +446,9 @@ func (a *App) tryExecuteCustomCommand(args *model.CommandArgs, trigger string, m
 	p.Set("channel_id", args.ChannelId)
 	p.Set("channel_name", channel.Name)
 
+	p.Set("root_id", args.RootId)
+	p.Set("parent_id", args.ParentId)
+
 	p.Set("user_id", args.UserId)
 	p.Set("user_name", user.Username)
 
